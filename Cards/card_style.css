@@ -1,0 +1,1003 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+body {
+	font-family: 'poppins', sans-serif;
+	background:rgb(235, 245, 234);
+	position: relative;
+	
+	
+	
+}
+section {
+	background: url('./img/child2.jpg') no-repeat center center/cover;
+	width: 100%;
+	height: 500px;
+	margin: auto;
+	margin-top: 100px;
+	display: grid;
+	background-attachment: fixed;
+	position: relative;
+	/* border-bottom-left-radius:20%;
+    border-bottom-right-radius:30%;	 */
+}
+
+
+
+
+
+section .desc {
+	margin-top: 200px;
+	padding: 50px;
+	display: flex;
+	width: 40%;
+	height: 300px;
+	background-color: rgba(11, 133, 28, 0.7);
+	flex-direction: column;
+	
+	position: relative;
+	clip-path: polygon(0% 0%, 47% 0%, 100% 100%, 0% 100%);
+
+
+
+	
+}
+section .desc h1 {
+	color: #fefefe;
+	font-size: 23px;
+	letter-spacing: 2.5px;
+	position: absolute;
+	left: 12%;
+	top: 22%;
+	z-index: 3;
+	background: transparent;
+	
+}
+section .desc div {
+	position: absolute;
+	left: 4%;
+	bottom: 4%;
+	width: 300px;
+	height: 200px;
+	margin-top: 40px;
+	
+	border-left: 3px solid #fefe;
+	border-right: 3px solid #fefe;
+	border-bottom: 3px solid #fefe;
+	z-index: 3;
+	color: white;
+}
+section .desc h1::before {
+	content:'';
+	height: 3px;
+	background: #fefe;
+	width: 40px;
+	position: absolute;
+	left: -27.5%;
+	top: 55%;
+	
+	z-index: 0;
+}
+section .desc h1::after {
+	content:'';
+	height: 3px;
+	background: #fefe;
+	width: 88px;
+	position: absolute;
+	left: 100%;
+	top: 55%;
+	z-index: 0;
+}
+
+section .desc p {
+	margin-top: 50px;
+	margin-left: 30px;
+	color: white;
+	
+}
+section .in-this-section {
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	right: 0;
+	bottom: -50%;
+	background-color: rgba(16, 191, 39, 0.6);
+	clip-path: polygon(0% 0%, 0% 78%, 50% 100%, 100% 78%, 100% 0%);
+}
+
+.card {
+	
+	display: grid;
+	width: 80%;
+	margin: auto;
+	margin-top: 120px;
+	grid-template-columns: 2fr 1fr;
+	overflow: hidden;
+	grid-auto-rows: 500px;
+	/* background: white; */
+
+	/* box-shadow: 0 50px 28px rgba(255, 255, 254, 0.55), 0 10px 28px rgba(0, 0, 0, 0.20); */
+	
+}
+.card-description {
+	display: flex;
+	text-align: left;
+	flex-direction: column;
+	line-height: 1.5;
+
+
+}
+.card-description h1 {
+	
+	height: 15%;
+	padding-left: 30px;
+	font-weight: 500;
+	font-size: 70px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	color: #47a220;
+}
+.card-description p {
+	font-weight: 200;
+	text-align: left;
+	padding: 30px;
+	line-height: 2;
+	color: grey;
+	padding-left: 38px;
+}
+
+.card .svg-image {
+	width: 100%;
+	height: 100%;	
+	clip-path: polygon(0% 0%, 0% 78%, 50% 100%, 100% 78%, 100% 0%);
+	position: relative;
+}
+.card .svg-image::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -100%;
+	top: -100%;
+	background: rgba(11, 133, 28, 0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	color: white;
+}
+.card .svg-image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: left;
+}
+
+
+
+
+.add-desc {
+	margin-top: 100px;
+	height: 500px;
+	background: url('./img/lib2.jpg') no-repeat center center/cover;
+	background-position: bottom left;
+	background-attachment: fixed;
+	color: grey;
+	line-height: 1.5;
+	position: relative;
+}
+.add-desc div {
+	color: white;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 10%;
+	background: rgba(4, 53, 10, 0.7);
+	width: 700px;
+	height: 400px;
+	
+	
+	
+}
+.add-desc h1 {
+	font-weight: 900;
+	padding-left: 30px;
+	padding-top: 30px;
+	font-size: 30px;
+	color: white;
+}
+.add-desc p {
+	margin-top: 10px;
+	padding-left: 30px;
+	font-weight: 100;
+	font-size: 15px;
+}
+.add-desc button {
+	border: none;
+	background: none;
+	margin-top: 50px;
+	margin-left: 30px;
+	width: 150px;
+	height: 50px;
+	letter-spacing: 1.2px;
+	color: white;
+	cursor: pointer;
+	border: 3px solid rgba(16, 203, 38, 0.7);
+	/* border-radius: 5px; */
+	outline: none;
+	font-size: 16px;
+}
+.add-desc button:hover {
+	background: #31761c;
+	border: none;
+}
+.admission-card {
+	margin: auto;
+	width: 100%;
+	height: 100vh;
+	margin-top: 100px;
+	text-align: center;
+	position: relative;
+	/* background: url('./img/lib.jpg') no-repeat center center/cover; */
+	background-attachment: fixed;
+	z-index: 1;
+	
+	
+}
+.admission-card::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	
+}
+
+.admission-card h1 {
+	position: absolute;
+	left: 6%;
+	letter-spacing: 1.4px;
+	font-size: 50px;
+	color: #47a220;
+}
+.admission-card p {
+	position: absolute;
+	left: 6%;
+	top: 13%;
+	text-align: left;
+	font-size: 15px;
+	color: #7F89A3;
+}
+.admission-card .design-admission {
+	position: absolute;
+	right: 0%;
+	top: 0;
+	width: 400px;
+	height: 100vh;
+	background: url('./img/girl.jpg') no-repeat center center/cover;
+	background-position: center right;
+	background-attachment: fixed;
+	clip-path: polygon(0% 50%, 50% 0%, 100% 0%, 100% 100%, 50% 100%);
+	color: white;
+	
+}
+.admission-card .design-admission::after {
+	
+	content: 'Apply For Us';
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	/* width: 400px; */
+	height: 100%;
+	background: rgba(6, 94, 18, 0.7);
+	background-position: center;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 50px;
+	font-size: 40px;
+	color: white;
+	position: relative;
+}
+.admission-card .step-card {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 300px);
+	grid-gap: 20px;
+}
+
+.admission-card .step-card .apply-card {
+	
+	margin-top: 160px;
+	margin-left: 90px;
+	height: 400px;
+	color: white;
+	width: 300px;
+	/* border: 5px solid #fefe; */
+	box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25), 0 0px 8px rgba(0, 0, 0, 0.10);
+	position: relative;
+	overflow: hidden;
+}
+.admission-card .step-card .st-1 {
+	background: url('./img/writing.jpg') no-repeat center center/cover;
+	background-position: center;
+}
+.admission-card .step-card .st-2 {
+	background: url('./img/money.jpg') no-repeat center center/cover;
+	background-position: center;
+}
+.admission-card .step-card .st-3 {
+	background: url('./img/money_giving.jpg') no-repeat center center/cover;
+	background-position: center;
+}
+
+.admission-card .step-card .apply-card .step-name {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: absolute;
+	background: rgba(0, 111, 15, 0.7);
+	left: 0%;
+	bottom: 0;
+	text-align: center;
+	transform: translateY(85%);
+	transition: transform 0.5s ease;
+	
+}
+.admission-card .step-card .apply-card .step-name:hover {
+	transform: translateY(0%);
+}
+.admission-card .step-card .apply-card.step-name {
+	transform: translateX(0%);
+}
+.admission-card .step-card .apply-card .step-name .fas {
+	font-size: 50px;
+}
+.admission-card .step-card .apply-card .step-name p {
+	position: initial;
+	text-align: center;
+	font-size: 25px;
+	padding: 10px;
+	color: white;
+	font-family: 'poppins';
+	letter-spacing: 1.3px;
+}
+.admission-card .step-card .apply-card .step-name .step-description h3 {
+	font-size: 25px;
+	padding: 10px;
+	
+} 
+
+
+footer {
+	margin-top: 100px;
+	z-index: 50;
+	overflow: hidden;
+	bottom: 0%;
+	height: 40vh;
+	display: grid;
+	
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	/* clip-path: polygon(0 10%,100% 0%,100% 100%,0 100%); */
+	
+	background: url('./img/bachwa.jpg') no-repeat center center/cover;
+	background-attachment: fixed;
+	background-color: rgba(6, 75, 16, 0.7);
+	position: relative;
+
+}
+footer::after {
+	content: '';
+	background-color: rgba(6, 75, 16, 0.7);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+
+}
+
+
+footer div {
+	display: flex;
+	/* align-items: center; */
+	justify-content: center; 
+	flex-direction: column;
+	text-align: left;
+	/* padding-left: 50px; */
+	/* background: black; */
+}
+footer div:nth-child(1) {
+	margin-left: 70px;
+}
+footer div h3 {
+	font-weight: 900;
+	font-size: 25px;
+	color: white;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+footer div a {
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	/* margin-left: 5px; */
+}
+footer div a:hover {
+	
+	color: #47a220;
+}
+footer div:nth-child(4) {
+	color: white;
+	text-align: left;
+	/* padding-left: 5px; */
+	 /* background: green; */
+}
+footer :nth-child(4) h3 {
+	font-size: 25px;
+	padding-left: 8px;
+}
+footer :nth-child(4) .social-icon{
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+	/* padding-left: 0px; */
+	text-align: left;
+	/* background: green; */
+}
+footer :nth-child(4) .social-icon a{
+	color: white;
+	font-size: 25px;
+	margin: 8px;
+}
+footer :nth-child(4) .social-icon a:hover{
+	color: #0e2d02;
+}
+
+@media (max-width: 1300px) {
+
+	.card-description button {
+		
+		width: 25%;
+		font-size: 18px;
+		
+	}
+	.card-description button .fas {
+	
+		position: absolute;
+		top: 16%;
+		left: 65%;
+		
+		font-size: 15px;
+	}
+
+}
+@media (max-width : 1024px) {
+
+}
+@media (max-width : 800px) {
+	
+
+	section .desc {
+		width: 60%;
+		
+	}
+	section .desc h1 {
+		color: #fefefe;
+		font-size: 20px;
+	
+		position: absolute;
+		left: 12%;
+		top: 30%;
+		
+		
+	}
+	section .desc div {
+		position: absolute;
+		left: 4%;
+		bottom: 4%;
+		width: 250px;
+		height: 180px;
+		margin-top: 20px;
+	
+	}
+	section .desc h1::before {
+		
+		width: 35px;
+		position: absolute;
+		left: -25%;
+		top: 55%;
+		
+	}
+	section .desc h1::after {
+		width: 65px;
+		position: absolute;
+		left: 100%;
+		top: 55%;
+		
+	}
+	
+	section .desc p {
+		
+		margin-left: 20px;
+		font-size: 15px;
+		
+	}
+	
+	.card {
+		width: 90%;
+		grid-template-columns: 100%;
+		grid-template-rows: 400px 400px;
+		grid-template-areas: 
+		"images" 
+		"description";
+		position: relative;
+		/* overflow: visible; */
+	}
+	.card-description {
+		grid-area: description;
+		line-height: 1;
+		
+		
+	}
+	.card-description h1 {
+		display: none;
+	}
+	.card .svg-image::before {
+		content: 'Why US';
+		color: white;
+		font-size: 60px;
+	}
+
+	.admission-card {
+		margin: auto;
+		height: 200vh;
+		margin-top: 100px;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+
+		
+	}
+	.admission-card .step-card {
+		
+		position: absolute;
+		top: 30%;
+		right: 0;
+		left: 10%;
+		bottom: 0;
+		grid-template-columns: repeat(auto-fit, 450px);
+		grid-gap: 0px;
+		/* background: blue; */
+	
+	}
+	.admission-card .step-card .apply-card {
+		color: white;
+		width: 450px;
+		margin-top: 0;
+	}
+	.admission-card h1 {
+		position: absolute;
+		left: 5%;
+		top: 15%;
+		text-align: center;
+		letter-spacing: 1.2px;
+		font-size: 40px;
+		color: #47a220;
+	}
+	.admission-card p {
+		position: absolute;
+		left: 5%;
+		top: 20%;
+		
+		font-size: 15px;
+		color: #7F89A3;
+	}
+	.admission-card .design-admission {
+		position: absolute;
+		top: 0%;
+		width: 100%;
+		height: 200px;
+		clip-path: polygon(0% 0%, 0% 78%, 50% 100%, 100% 78%, 100% 0%);
+		color: white;
+		
+	}
+	.admission-card .design-admission::after {
+		
+		justify-content: center;
+		align-items: center;
+		font-size: 50px;
+		color: white;
+		position: relative;
+	}
+
+	footer {
+
+		bottom: -100%;
+	}
+}
+@media (max-width : 450px) {
+	section .desc {
+		width: 90%;
+		
+	}
+	section .desc h1 {
+		color: #fefefe;
+		font-size: 20px;
+	
+		position: absolute;
+		left: 12%;
+		top: 30%;
+		
+		
+	}
+	section .desc div {
+		position: absolute;
+		left: 4%;
+		bottom: 4%;
+		width: 250px;
+		height: 180px;
+		margin-top: 20px;
+	
+	}
+	section .desc h1::before {
+		
+		width: 30px;
+		position: absolute;
+		left: -22%;
+		top: 55%;
+		
+	}
+	section .desc h1::after {
+		width: 68px;
+		position: absolute;
+		left: 100%;
+		top: 55%;
+		
+	}
+	
+	section .desc p {
+		
+		margin-left: 20px;
+		font-size: 15px;
+		
+	}
+	
+
+	.card-description {
+		grid-area: description;
+		line-height: 1;
+		
+		
+	}
+	.card-description h1 {
+		display: none;
+	}
+	.card-description p {
+		font-size: 13px;
+	}
+	.card .svg-image::before {
+		content: 'Why US';
+		color: white;
+		font-size: 35px;
+	}
+	
+	.add-desc div {
+		color: white;
+		width: 400px;
+		height: 320px;
+		
+		
+		
+	}
+	.add-desc h1 {
+		
+		font-size: 20px;
+	
+	}
+	.add-desc p {
+		
+		font-size: 13px;
+	}
+	.add-desc button {
+		
+		margin-top: 10px;
+		width: 130px;
+		height: 50px;
+		font-size: 13px;
+	}
+	.admission-card {
+		margin: auto;
+		height: 200vh;
+		margin-top: 100px;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+
+		
+	}
+	.admission-card .step-card {
+		
+		position: absolute;
+		top: 25%;
+		right: 0;
+		left: -10%;
+		bottom: 0;
+		grid-template-columns: repeat(auto-fit, 350px);
+	
+		grid-gap: 0px;
+		/* background: blue; */
+	
+	}
+	.admission-card .step-card .apply-card {
+	
+		width: 350px;
+		
+	}
+	.admission-card h1 {
+		position: absolute;
+		left: 25%;
+		top: 15%;
+		letter-spacing: 1.1px;
+		font-size: 20px;
+		
+	}
+	.admission-card p {
+		position: absolute;
+		left: 5%;
+		top: 18%;
+		font-size: 13px;
+	
+	}
+	
+	.admission-card .design-admission::after {
+		padding-left: 50px;
+		font-size: 30px;
+	}
+
+	footer {
+
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		/* bottom: -100%; */
+		height: 50vh;
+		position: relative;
+	}
+	footer div:nth-child(1) {
+		margin-left: 20px;
+	}
+	
+	footer div h3 {
+		font-weight: 300;
+		font-size: 15px;
+		color: white;
+		margin-bottom: 20px;
+	}
+	
+	footer div a {
+		
+		font-size: 12px;
+		/* margin-left: 5px; */
+	}
+	footer div a:hover {
+		
+		color: #47a220;
+	}
+	footer div:nth-child(4) {
+		margin-top: 0;
+		position: absolute;
+		top: 0%;
+		width: 100%;
+		height: 30%;
+		/* text-align: center; */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		
+	
+	}
+	footer div:nth-child(4) div:nth-child(3) {
+		position: absolute;
+		font-size: 16px;
+		top: 82%;
+		left: 5%;
+	}
+	footer div:nth-child(4) div:nth-child(4) {
+		position: absolute;
+		font-size: 16px;
+		top: 92%;
+		left: -19%;
+	}
+	footer :nth-child(4) h3 {
+		font-size: 23px;
+		color: white;
+		padding-left: 8px;
+		font-weight: 400;
+	}
+	
+	footer :nth-child(4) .social-icon a{
+		color: white;
+		font-size: 25px;
+		cursor: pointer;
+		display: flex;
+	}
+	footer :nth-child(4) .social-icon a:hover{
+		color: #0e2d02;
+		
+	}
+	
+	
+}
+@media (max-width : 375px) {
+	section {
+		width: 100%;
+	
+	}
+	section .image {
+		/* padding: 40px; */
+		margin-left: 20px;
+		/* overflow: hidden; */
+		/* background: black; */
+	
+	}
+	section .image img{
+		object-fit: cover;
+	
+	}
+	.admission-card {
+		width: 90%;
+		height: fit-content;
+		position: relative;
+	}
+	.admission-card::before {
+		content: '';
+		height: 70%;
+		width: 3px;
+		background: #0052AF;
+	
+		position: absolute;
+		left: 50%;
+		top: 10%;
+		z-index: -1;
+	}
+	.admission-card .add-desc h1 {
+		font-size: 25px;
+	}
+	.admission-card .add-desc p{
+		font-size: 13px;
+	}
+	.admission-card .step1 {
+		height: 350px;
+		position: relative;
+		justify-content: start;
+	}
+	.admission-card .step2 {
+		justify-content: start;
+		position: relative;
+		height: 580px;
+		margin-top: 70px;
+	}
+
+	.admission-card .step3 {
+		
+		justify-content: start;
+		position: relative;
+		height: 550px;
+		margin-top: 70px;
+		
+	}
+	
+	.admission-card .step1 .step-name,
+	.admission-card .step2 .step-name,
+	.admission-card .step3 .step-name {
+		position: absolute;
+		top: -4%;
+		left: 23%;
+		
+	}
+	
+	.admission-card .step1 .step-name p,
+	.admission-card .step2 .step-name p,
+	.admission-card .step3 .step-name p {
+		text-align: center;
+		font-size: 18px;
+		font-weight: 600;
+		
+	}
+	.admission-card .step1 div,
+	.admission-card .step2 div,
+	.admission-card .step3 div {
+		
+		padding: 20px;
+		color: #fefefe;
+		display: flex;
+		flex-direction: column;
+		
+		font-weight: 100;
+		text-align: center;
+	}
+	.admission-card .step1 div h1,
+	.admission-card .step2 div h1,
+	.admission-card .step3 div h1 {
+		margin-top: 50px;
+		color: #fefefe;
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 10px;
+	
+	}
+	.admission-card .step1 div p,
+	.admission-card .step2 div p,
+	.admission-card .step3 div p {
+		font-size: 13px;
+		
+		
+	}
+	.admission-card .step2 div h1 {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	
+	.admission-card .step1 img {
+	
+		/* padding: 20px; */
+		width: 95%;
+		height: 100%;
+		object-fit: contain;
+		padding: 0px;
+		padding-left: 70px;
+		/* object-position: center; */
+		
+		
+	}
+	.admission-card .step2 img {
+		width: 85%;
+		height: 100%;
+		object-fit: contain;
+		padding: 0px;
+		padding-left: 50px;
+		
+		
+	}
+	.admission-card .step3 img {
+		
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		padding: 0px;
+		padding-left: 50px;
+		
+
+	}
+	.card {
+		grid-template-rows: 400px 500px;
+	}
+	.svg-section h1{
+		font-size: 25px;
+		padding: 15px;
+		padding-left: 30px;
+	}
+	.card-description button {
+	
+		font-size: 15px;
+		width: 40%;
+		
+	}
+	.card-description button .fas {
+		font-size: 15px;
+		top: 10%;
+		left: 72%;
+	}
+}
